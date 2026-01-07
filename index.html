@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🌡️ Temperature Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <div class="card">
+        <h1>🌡️ Temp Converter</h1>
+        <p class="subtitle">Convert temperature instantly 🔥❄️</p>
+
+        <div class="field">
+            <label>🔢 Enter Temperature</label>
+            <input type="text" id="tempValue" placeholder="e.g. 72">
+        </div>
+
+        <div class="field">
+            <label>📌 Select Unit</label>
+            <select id="unit">
+                <option value="C">🌤️ Celsius (°C)</option>
+                <option value="F">🔥 Fahrenheit (°F)</option>
+                <option value="K">❄️ Kelvin (K)</option>
+            </select>
+        </div>
+
+        <button onclick="convertTemp()">✨ Convert</button>
+
+        <div class="output">
+            <p id="result">👉 Result will appear here</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

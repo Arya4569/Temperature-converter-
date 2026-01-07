@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff6a00, #ee0979, #6a11cb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Prevents card from touching edges on small screens */
+}
+
+.app {
+    width: 100%;
+    max-width: 360px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    animation: pop 0.8s ease;
+}
+
+@keyframes pop {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+h1 {
+    margin: 0;
+    color: #ee0979;
+    font-size: 28px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.field {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #ee0979;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    border: none;
+    border-radius: 18px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(238,9,121,0.4);
+}
+
+.output {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.output p {
+    color: #6a11cb;
+}
+
+/* ======================
+   RESPONSIVE FOR MOBILE
+====================== */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .output {
+        font-size: 18px;
+    }
+}
